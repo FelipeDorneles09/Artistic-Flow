@@ -1,73 +1,72 @@
-# Welcome to your Lovable project
+# 🧠 Inventory Management System
+The Inventory Management System is a comprehensive web application designed to manage inventory, orders, and pricing settings for businesses. It provides a user-friendly interface for managing inventory items, tracking orders, and updating pricing settings. The application utilizes a range of technologies, including React, Vite, and Firebase, to provide a scalable and efficient solution for inventory management.
 
-## Project info
+## 🚀 Features
+* Inventory management: add, update, and delete inventory items
+* Order management: add, update, and delete orders
+* Pricing settings management: update pricing settings
+* Real-time inventory tracking: listen to inventory changes and update the application accordingly
+* Authentication and authorization: manage user authentication and authorization using Firebase Authentication
+* Responsive design: the application is optimized for use on a range of devices, including desktops, laptops, and mobile devices
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## 🛠️ Tech Stack
+* Frontend: React, Vite
+* Backend: Firebase, Firestore
+* Database: Firestore
+* Authentication: Firebase Authentication
+* State management: Zustand
+* Payment gateway: Stripe
+* APIs: orders API, inventory API, pricing API
+* Utilities: clsx, tailwind-merge
 
-## How can I edit this code?
+## 📦 Installation
+To install the application, follow these steps:
+1. Clone the repository using `git clone`
+2. Install the dependencies using `npm install` or `yarn install`
+3. Set up the Firebase project and configure the environment variables
+4. Start the development server using `npm run dev` or `yarn dev`
 
-There are several ways of editing your application.
+## 💻 Usage
+To use the application, follow these steps:
+1. Start the development server using `npm run dev` or `yarn dev`
+2. Open the application in a web browser using `http://localhost:8080`
+3. Log in to the application using a valid username and password
+4. Manage inventory items, orders, and pricing settings using the application's interface
 
-**Use Lovable**
-
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+## 📂 Project Structure
+```markdown
+.
+├── index.html
+├── vite.config.ts
+├── src
+│   ├── App.tsx
+│   ├── main.tsx
+│   ├── contexts
+│   │   ├── AuthContext.tsx
+│   ├── hooks
+│   │   ├── useManageSubscription.ts
+│   │   ├── useSubscription.ts
+│   ├── lib
+│   │   ├── stripe.ts
+│   │   ├── ordersApi.ts
+│   │   ├── firebase.ts
+│   │   ├── utils.ts
+│   │   ├── inventoryApi.ts
+│   ├── store
+│   │   ├── inventoryStore.ts
+│   │   ├── pricingStore.ts
+│   │   ├── orderStore.ts
+├── types
+│   ├── inventory.ts
+│   ├── order.ts
 ```
 
-**Edit a file directly in GitHub**
+## 📸 Screenshots
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🤝 Contributing
+To contribute to the application, please follow these steps:
+1. Fork the repository using `git fork`
+2. Create a new branch using `git branch`
+3. Make changes to the code and commit them using `git commit`
+4. Push the changes to the remote repository using `git push`
+5. Create a pull request using the GitHub interface
