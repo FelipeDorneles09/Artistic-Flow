@@ -1,0 +1,191 @@
+import { Order } from '@/types/order';
+
+const today = new Date();
+const addDays = (days: number) => {
+  const date = new Date(today);
+  date.setDate(date.getDate() + days);
+  return date;
+};
+
+const subtractDays = (days: number) => {
+  const date = new Date(today);
+  date.setDate(date.getDate() - days);
+  return date;
+};
+
+export const mockOrders: Order[] = [
+  {
+    id: '1',
+    clientName: 'Maria Silva',
+    productDescription: 'Kit 50 lembrancinhas de batizado - Anjinhos de gesso',
+    deadline: addDays(2),
+    price: 450,
+    status: 'production',
+    materials: [
+      { id: '1-1', name: 'Gesso', quantity: '2 kg' },
+      { id: '1-2', name: 'Tinta branca', quantity: '1 lata' },
+      { id: '1-3', name: 'Glitter dourado', quantity: '100g' },
+      { id: '1-4', name: 'Fitas de cetim azul', quantity: '10 metros' },
+      { id: '1-5', name: 'Caixinhas', quantity: '50 unidades' },
+    ],
+    referenceImage: 'https://images.unsplash.com/photo-1513475382585-d06e58bcb0e0?w=400',
+    clientPhone: '5511999887766',
+    createdAt: subtractDays(5),
+  },
+  {
+    id: '2',
+    clientName: 'João Pereira',
+    productDescription: 'Álbum de fotos encadernado - Casamento',
+    deadline: addDays(1),
+    price: 380,
+    status: 'finishing',
+    materials: [
+      { id: '2-1', name: 'Papel fotográfico', quantity: '50 folhas' },
+      { id: '2-2', name: 'Couro sintético marrom', quantity: '1 metro' },
+      { id: '2-3', name: 'Linha encerada', quantity: '1 rolo' },
+      { id: '2-4', name: 'Cola PVA', quantity: '1 frasco' },
+    ],
+    referenceImage: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400',
+    clientPhone: '5511988776655',
+    createdAt: subtractDays(10),
+  },
+  {
+    id: '3',
+    clientName: 'Ana Costa',
+    productDescription: '30 Bem-casados para festa - Embalagem personalizada',
+    deadline: addDays(5),
+    price: 280,
+    status: 'to_buy',
+    materials: [
+      { id: '3-1', name: 'Massa folhada', quantity: '2 pacotes' },
+      { id: '3-2', name: 'Doce de leite', quantity: '500g' },
+      { id: '3-3', name: 'Papel rendado', quantity: '30 unidades' },
+      { id: '3-4', name: 'Fitas decorativas', quantity: '5 metros' },
+      { id: '3-5', name: 'Tags personalizados', quantity: '30 unidades' },
+    ],
+    referenceImage: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400',
+    clientPhone: '5511977665544',
+    createdAt: subtractDays(3),
+  },
+  {
+    id: '4',
+    clientName: 'Paula Mendes',
+    productDescription: 'Caderno artesanal A5 - Capa em tecido floral',
+    deadline: addDays(8),
+    price: 120,
+    status: 'production',
+    materials: [
+      { id: '4-1', name: 'Tecido floral', quantity: '50cm' },
+      { id: '4-2', name: 'Papelão cinza', quantity: '2 folhas' },
+      { id: '4-3', name: 'Papel pólen', quantity: '100 folhas' },
+      { id: '4-4', name: 'Linha', quantity: '1 carretel' },
+      { id: '4-5', name: 'Agulha curva', quantity: '1 unidade' },
+    ],
+    referenceImage: 'https://images.unsplash.com/photo-1531346878377-a5be20888e57?w=400',
+    clientPhone: '5511966554433',
+    createdAt: subtractDays(2),
+  },
+  {
+    id: '5',
+    clientName: 'Carlos Oliveira',
+    productDescription: '100 Tags para lembrancinhas - Chá de bebê',
+    deadline: addDays(4),
+    price: 85,
+    status: 'ready',
+    materials: [
+      { id: '5-1', name: 'Papel kraft', quantity: '20 folhas' },
+      { id: '5-2', name: 'Carimbos', quantity: '3 unidades' },
+      { id: '5-3', name: 'Fitas', quantity: '5 metros' },
+    ],
+    referenceImage: 'https://images.unsplash.com/photo-1519340241574-2cec6aef0c01?w=400',
+    clientPhone: '5511955443322',
+    createdAt: subtractDays(7),
+  },
+  {
+    id: '6',
+    clientName: 'Fernanda Lima',
+    productDescription: 'Caixa de MDF decorada - Porta-joias',
+    deadline: addDays(12),
+    price: 195,
+    status: 'to_buy',
+    materials: [
+      { id: '6-1', name: 'Caixa MDF', quantity: '1 unidade' },
+      { id: '6-2', name: 'Tinta acrílica rosa', quantity: '1 frasco' },
+      { id: '6-3', name: 'Puxador vintage', quantity: '1 unidade' },
+      { id: '6-4', name: 'Veludo', quantity: '30cm' },
+      { id: '6-5', name: 'Cola quente', quantity: '5 bastões' },
+    ],
+    referenceImage: 'https://images.unsplash.com/photo-1584917865442-de89df76afd3?w=400',
+    clientPhone: '5511944332211',
+    createdAt: subtractDays(1),
+  },
+  {
+    id: '7',
+    clientName: 'Roberto Santos',
+    productDescription: 'Mini bolo fake - Decoração 15 anos',
+    deadline: addDays(6),
+    price: 320,
+    status: 'production',
+    materials: [
+      { id: '7-1', name: 'Isopor', quantity: '2 bolas grandes' },
+      { id: '7-2', name: 'Pasta americana', quantity: '1 kg' },
+      { id: '7-3', name: 'Corante rosa', quantity: '1 frasco' },
+      { id: '7-4', name: 'Pérolas comestíveis', quantity: '1 pacote' },
+      { id: '7-5', name: 'Base dourada', quantity: '1 unidade' },
+    ],
+    referenceImage: 'https://images.unsplash.com/photo-1558636508-e0db3814bd1d?w=400',
+    clientPhone: '5511933221100',
+    createdAt: subtractDays(4),
+  },
+  {
+    id: '8',
+    clientName: 'Lucia Ferreira',
+    productDescription: '20 Sabonetes artesanais - Lavanda',
+    deadline: subtractDays(2),
+    price: 150,
+    status: 'delivered',
+    materials: [
+      { id: '8-1', name: 'Base glicerinada', quantity: '1 kg' },
+      { id: '8-2', name: 'Óleo essencial lavanda', quantity: '1 frasco' },
+      { id: '8-3', name: 'Corante', quantity: '1 frasco' },
+      { id: '8-4', name: 'Moldes', quantity: '4 unidades' },
+    ],
+    referenceImage: 'https://images.unsplash.com/photo-1600857062241-98e5dba7f214?w=400',
+    clientPhone: '5511922110099',
+    createdAt: subtractDays(15),
+  },
+  {
+    id: '9',
+    clientName: 'Marcos Almeida',
+    productDescription: 'Convites de casamento - 80 unidades',
+    deadline: addDays(10),
+    price: 560,
+    status: 'to_buy',
+    materials: [
+      { id: '9-1', name: 'Papel vegetal', quantity: '100 folhas' },
+      { id: '9-2', name: 'Papel perolado', quantity: '100 folhas' },
+      { id: '9-3', name: 'Fita de cetim', quantity: '20 metros' },
+      { id: '9-4', name: 'Selo de cera', quantity: '80 unidades' },
+    ],
+    referenceImage: 'https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=400',
+    clientPhone: '5511911009988',
+    createdAt: subtractDays(2),
+  },
+  {
+    id: '10',
+    clientName: 'Beatriz Nascimento',
+    productDescription: 'Kit papelaria personalizada - Aniversário 1 ano',
+    deadline: addDays(3),
+    price: 220,
+    status: 'finishing',
+    materials: [
+      { id: '10-1', name: 'Papel couché', quantity: '50 folhas' },
+      { id: '10-2', name: 'Topper de bolo', quantity: '1 unidade' },
+      { id: '10-3', name: 'Wrapper cupcake', quantity: '20 unidades' },
+      { id: '10-4', name: 'Rótulos', quantity: '30 unidades' },
+    ],
+    referenceImage: 'https://images.unsplash.com/photo-1530103862676-de8c9debad1d?w=400',
+    clientPhone: '5511900998877',
+    createdAt: subtractDays(6),
+  },
+];

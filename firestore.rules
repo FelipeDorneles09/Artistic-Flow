@@ -1,0 +1,41 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // user docs: only the owner can read/write their user doc
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // per-user orders subcollection: each user's orders are stored under /users/{userId}/orders/
+    match /users/{userId}/orders/{orderId} {
+      // allow owners full access to their orders
+      allow get, list: if request.auth != null && request.auth.uid == userId;
+      allow create, update, delete: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // per-user 3D projects subcollection
+    match /users/{userId}/projects3d/{projectId} {
+      allow get, list: if request.auth != null && request.auth.uid == userId;
+      allow create, update, delete: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // per-user inventory subcollection
+    match /users/{userId}/inventory/{itemId} {
+      allow get, list: if request.auth != null && request.auth.uid == userId;
+      allow create, update, delete: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // per-user pricingSettings subcollection
+    match /users/{userId}/pricingSettings/{settingId} {
+      allow get, list: if request.auth != null && request.auth.uid == userId;
+      allow create, update, delete: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // per-user inventory history log
+    match /users/{userId}/inventoryHistory/{entryId} {
+      allow get, list: if request.auth != null && request.auth.uid == userId;
+      allow create: if request.auth != null && request.auth.uid == userId;
+    }
+  }
+}
