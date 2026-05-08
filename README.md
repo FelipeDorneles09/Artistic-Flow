@@ -62,6 +62,13 @@ To use the application, follow these steps:
 ```
 
 ## 📸 Screenshots
+<img width="1365" height="767" alt="Captura de tela 2026-05-08 105330" src="https://github.com/user-attachments/assets/12275d72-49b8-4e85-8c91-e9adf79fbcfa" />
+<img width="1365" height="767" alt="Captura de tela 2026-05-08 105314" src="https://github.com/user-attachments/assets/bb3ca473-7eb8-4c7f-bcf8-ab71faee4179" />
+<img width="1365" height="767" alt="Captura de tela 2026-05-08 105305" src="https://github.com/user-attachments/assets/8d8b9670-3af2-467b-ac72-834f54f29389" />
+<img width="1365" height="767" alt="Captura de tela 2026-05-08 105259" src="https://github.com/user-attachments/assets/60869be1-9130-4cd4-87ee-85cf7ac6f6ad" />
+<img width="1365" height="767" alt="Captura de tela 2026-05-08 105252" src="https://github.com/user-attachments/assets/51abaa7a-043d-4459-b378-72f9096df046" />
+<img width="1365" height="767" alt="Captura de tela 2026-05-08 105337" src="https://github.com/user-attachments/assets/e58f06c8-c3e2-4f41-aabd-fecfa3e8f1b0" />
+
 
 ## 🤝 Contributing
 To contribute to the application, please follow these steps:
